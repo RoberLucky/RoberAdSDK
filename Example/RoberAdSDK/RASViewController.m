@@ -7,7 +7,7 @@
 //
 
 #import "RASViewController.h"
-
+#import <AdSDKMavlFrameWork/MavlAdExtend.h>
 @interface RASViewController ()
 
 @end
@@ -17,6 +17,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    NSString *version = [[MavlAdManager sharedMopubManager] getCurrentSDKVersion];
 	// Do any additional setup after loading the view, typically from a nib.
 }
 

@@ -1,0 +1,6 @@
+framework module APSMopubAdapter {
+  umbrella header "APSMopubAdapter.h"
+
+  export *
+  module * { export * }
+}

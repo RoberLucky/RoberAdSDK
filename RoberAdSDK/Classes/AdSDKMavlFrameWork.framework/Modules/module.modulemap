@@ -1,0 +1,6 @@
+framework module AdSDKMavlFrameWork {
+  umbrella header "AdSDKMavlFrameWork.h"
+
+  export *
+  module * { export * }
+}

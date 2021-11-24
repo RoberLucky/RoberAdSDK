@@ -59,14 +59,14 @@
 		6003F5B9195388D20070C39A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		6003F5BB195388D20070C39A /* Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tests.m; sourceTree = "<group>"; };
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
-		675CDCA15A188D6A741F478B /* RoberAdSDK.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = RoberAdSDK.podspec; path = ../RoberAdSDK.podspec; sourceTree = "<group>"; };
+		675CDCA15A188D6A741F478B /* RoberAdSDK.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = RoberAdSDK.podspec; path = ../RoberAdSDK.podspec; sourceTree = "<group>"; };
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7FB5170B87984FB3FF804C0B /* Pods-RoberAdSDK_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RoberAdSDK_Tests.debug.xcconfig"; path = "Target Support Files/Pods-RoberAdSDK_Tests/Pods-RoberAdSDK_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		947B97C18AC7E2DBB2C5A277 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		947B97C18AC7E2DBB2C5A277 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		A0472623D5243D95BDCDAED6 /* Pods-RoberAdSDK_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RoberAdSDK_Example.release.xcconfig"; path = "Target Support Files/Pods-RoberAdSDK_Example/Pods-RoberAdSDK_Example.release.xcconfig"; sourceTree = "<group>"; };
 		B4E42CEBF771EB2A991C4DE9 /* Pods-RoberAdSDK_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RoberAdSDK_Tests.release.xcconfig"; path = "Target Support Files/Pods-RoberAdSDK_Tests/Pods-RoberAdSDK_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		D9F01013718769FE7CF84968 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		D9F01013718769FE7CF84968 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -193,7 +193,6 @@
 				7FB5170B87984FB3FF804C0B /* Pods-RoberAdSDK_Tests.debug.xcconfig */,
 				B4E42CEBF771EB2A991C4DE9 /* Pods-RoberAdSDK_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -209,6 +208,7 @@
 				6003F587195388D20070C39A /* Frameworks */,
 				6003F588195388D20070C39A /* Resources */,
 				0CBE36401869F20AADB0E405 /* [CP] Embed Pods Frameworks */,
+				50E59DB804C9D1500682F496 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -258,6 +258,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -302,15 +303,51 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-RoberAdSDK_Example/Pods-RoberAdSDK_Example-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/RoberAdSDK/RoberAdSDK.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKCoreKit/FBSDKCoreKit.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/PromisesObjC/FBLPromises.framework",
+				"${BUILT_PRODUCTS_DIR}/PureLayout/PureLayout.framework",
+				"${BUILT_PRODUCTS_DIR}/mopub-ios-sdk/MoPubSDK.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/AmazonPublisherServicesSDK/DTBiOSSDK.framework/DTBiOSSDK",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/mopub-ios-sdk/Core/OMSDK_Mopub.framework/OMSDK_Mopub",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RoberAdSDK.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKCoreKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBLPromises.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PureLayout.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MoPubSDK.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DTBiOSSDK.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/OMSDK_Mopub.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RoberAdSDK_Example/Pods-RoberAdSDK_Example-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		50E59DB804C9D1500682F496 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RoberAdSDK_Example/Pods-RoberAdSDK_Example-resources.sh",
+				"${PODS_ROOT}/Ads-Global/PangleSDK/LICENSE",
+				"${PODS_ROOT}/Ads-Global/PangleSDK/BUAdSDK.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/RoberAdSDK/RoberAdSDK.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/LICENSE",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/BUAdSDK.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/RoberAdSDK.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RoberAdSDK_Example/Pods-RoberAdSDK_Example-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		A8DA0F1F34B5959B3EB5D5FC /* [CP] Check Pods Manifest.lock */ = {
@@ -494,6 +531,7 @@
 			baseConfigurationReference = 3CCB4597E87A7F3B2F78938D /* Pods-RoberAdSDK_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "RoberAdSDK/RoberAdSDK-Prefix.pch";
 				INFOPLIST_FILE = "RoberAdSDK/RoberAdSDK-Info.plist";
@@ -510,6 +548,7 @@
 			baseConfigurationReference = A0472623D5243D95BDCDAED6 /* Pods-RoberAdSDK_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "RoberAdSDK/RoberAdSDK-Prefix.pch";
 				INFOPLIST_FILE = "RoberAdSDK/RoberAdSDK-Info.plist";

@@ -1,0 +1,6 @@
+framework module MoPub_Pangle_Adapters {
+  umbrella header "MoPub-Pangle-Adapters-umbrella.h"
+
+  export *
+  module * { export * }
+}

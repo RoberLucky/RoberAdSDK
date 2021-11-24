@@ -1,0 +1,6 @@
+framework module RoberAdSDK {
+  umbrella header "RoberAdSDK-umbrella.h"
+
+  export *
+  module * { export * }
+}

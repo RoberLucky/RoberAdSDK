@@ -1,0 +1,13 @@
+CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = NO
+CONFIGURATION_BUILD_DIR = ${PODS_CONFIGURATION_BUILD_DIR}/AmazonPublisherServicesMoPubAdapter
+FRAMEWORK_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/mopub-ios-sdk" "${PODS_ROOT}/AmazonPublisherServicesMoPubAdapter/APS_iOS_SDK-3.4.5" "${PODS_ROOT}/AmazonPublisherServicesSDK/APS_iOS_SDK-3.4.6" "${PODS_ROOT}/mopub-ios-sdk/Frameworks" "${PODS_XCFRAMEWORKS_BUILD_DIR}/AmazonPublisherServicesSDK" "${PODS_XCFRAMEWORKS_BUILD_DIR}/mopub-ios-sdk/Core"
+GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
+OTHER_LDFLAGS = $(inherited) -framework "CoreLocation" -framework "CoreTelephony" -framework "DTBiOSSDK" -framework "EventKit" -framework "EventKitUI" -framework "MediaPlayer" -framework "QuartzCore" -framework "StoreKit" -framework "SystemConfiguration" -weak_framework "AdSupport" -weak_framework "CoreLocation" -weak_framework "CoreTelephony" -weak_framework "EventKit" -weak_framework "EventKitUI" -weak_framework "MediaPlayer" -weak_framework "QuartzCore" -weak_framework "StoreKit" -weak_framework "SystemConfiguration" -weak_framework "WebKit"
+PODS_BUILD_DIR = ${BUILD_DIR}
+PODS_CONFIGURATION_BUILD_DIR = ${PODS_BUILD_DIR}/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)
+PODS_ROOT = ${SRCROOT}
+PODS_TARGET_SRCROOT = ${PODS_ROOT}/AmazonPublisherServicesMoPubAdapter
+PODS_XCFRAMEWORKS_BUILD_DIR = $(PODS_CONFIGURATION_BUILD_DIR)/XCFrameworkIntermediates
+PRODUCT_BUNDLE_IDENTIFIER = org.cocoapods.${PRODUCT_NAME:rfc1034identifier}
+SKIP_INSTALL = YES
+USE_RECURSIVE_SCRIPT_INPUTS_IN_SCRIPT_PHASES = YES

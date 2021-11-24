@@ -1,0 +1,146 @@
+PODS:
+  - Ads-Global (3.7.0.8):
+    - Ads-Global/BUAdSDK (= 3.7.0.8)
+  - Ads-Global/BUAdSDK (3.7.0.8):
+    - Ads-Global/BUFoundation
+    - Ads-Global/International
+  - Ads-Global/BUFoundation (3.7.0.8)
+  - Ads-Global/International (3.7.0.8)
+  - AmazonPublisherServicesMoPubAdapter (1.3.0):
+    - AmazonPublisherServicesSDK (>= 3.4.5)
+    - mopub-ios-sdk (>= 5.13.1)
+  - AmazonPublisherServicesSDK (3.4.6)
+  - FBAudienceNetwork (6.5.0):
+    - FBSDKCoreKit/Basics (>= 7.0.1)
+  - FBSDKCoreKit/Basics (9.3.0)
+  - Google-Mobile-Ads-SDK (8.5.0):
+    - GoogleAppMeasurement (< 9.0, >= 7.0)
+    - GoogleUserMessagingPlatform (>= 1.1)
+  - GoogleAppMeasurement (8.9.1):
+    - GoogleAppMeasurement/AdIdSupport (= 8.9.1)
+    - GoogleUtilities/AppDelegateSwizzler (~> 7.6)
+    - GoogleUtilities/MethodSwizzler (~> 7.6)
+    - GoogleUtilities/Network (~> 7.6)
+    - "GoogleUtilities/NSData+zlib (~> 7.6)"
+    - nanopb (~> 2.30908.0)
+  - GoogleAppMeasurement/AdIdSupport (8.9.1):
+    - GoogleAppMeasurement/WithoutAdIdSupport (= 8.9.1)
+    - GoogleUtilities/AppDelegateSwizzler (~> 7.6)
+    - GoogleUtilities/MethodSwizzler (~> 7.6)
+    - GoogleUtilities/Network (~> 7.6)
+    - "GoogleUtilities/NSData+zlib (~> 7.6)"
+    - nanopb (~> 2.30908.0)
+  - GoogleAppMeasurement/WithoutAdIdSupport (8.9.1):
+    - GoogleUtilities/AppDelegateSwizzler (~> 7.6)
+    - GoogleUtilities/MethodSwizzler (~> 7.6)
+    - GoogleUtilities/Network (~> 7.6)
+    - "GoogleUtilities/NSData+zlib (~> 7.6)"
+    - nanopb (~> 2.30908.0)
+  - GoogleUserMessagingPlatform (2.0.0)
+  - GoogleUtilities/AppDelegateSwizzler (7.6.0):
+    - GoogleUtilities/Environment
+    - GoogleUtilities/Logger
+    - GoogleUtilities/Network
+  - GoogleUtilities/Environment (7.6.0):
+    - PromisesObjC (< 3.0, >= 1.2)
+  - GoogleUtilities/Logger (7.6.0):
+    - GoogleUtilities/Environment
+  - GoogleUtilities/MethodSwizzler (7.6.0):
+    - GoogleUtilities/Logger
+  - GoogleUtilities/Network (7.6.0):
+    - GoogleUtilities/Logger
+    - "GoogleUtilities/NSData+zlib"
+    - GoogleUtilities/Reachability
+  - "GoogleUtilities/NSData+zlib (7.6.0)"
+  - GoogleUtilities/Reachability (7.6.0):
+    - GoogleUtilities/Logger
+  - MoPub-FacebookAudienceNetwork-Adapters (6.5.0.0):
+    - MoPub-FacebookAudienceNetwork-Adapters/MoPub (= 6.5.0.0)
+    - MoPub-FacebookAudienceNetwork-Adapters/Network (= 6.5.0.0)
+  - MoPub-FacebookAudienceNetwork-Adapters/MoPub (6.5.0.0):
+    - mopub-ios-sdk/Core (~> 5.17.0)
+    - mopub-ios-sdk/NativeAds (~> 5.17.0)
+  - MoPub-FacebookAudienceNetwork-Adapters/Network (6.5.0.0):
+    - FBAudienceNetwork (= 6.5.0)
+    - mopub-ios-sdk/Core (~> 5.17.0)
+    - mopub-ios-sdk/NativeAds (~> 5.17.0)
+  - mopub-ios-sdk (5.17.0):
+    - mopub-ios-sdk/MoPubSDK (= 5.17.0)
+  - mopub-ios-sdk/Core (5.17.0)
+  - mopub-ios-sdk/MoPubSDK (5.17.0):
+    - mopub-ios-sdk/Core
+    - mopub-ios-sdk/NativeAds
+  - mopub-ios-sdk/NativeAds (5.17.0):
+    - mopub-ios-sdk/Core
+  - MoPub-Pangle-Adapters (3.7.0.8.0):
+    - MoPub-Pangle-Adapters/MoPub (= 3.7.0.8.0)
+    - MoPub-Pangle-Adapters/Network (= 3.7.0.8.0)
+  - MoPub-Pangle-Adapters/MoPub (3.7.0.8.0):
+    - mopub-ios-sdk/Core (~> 5.17.0)
+    - mopub-ios-sdk/NativeAds (~> 5.17.0)
+  - MoPub-Pangle-Adapters/Network (3.7.0.8.0):
+    - Ads-Global (= 3.7.0.8)
+    - mopub-ios-sdk/Core (~> 5.17.0)
+    - mopub-ios-sdk/NativeAds (~> 5.17.0)
+  - nanopb (2.30908.0):
+    - nanopb/decode (= 2.30908.0)
+    - nanopb/encode (= 2.30908.0)
+  - nanopb/decode (2.30908.0)
+  - nanopb/encode (2.30908.0)
+  - PromisesObjC (2.0.0)
+  - PureLayout (3.1.9)
+  - RoberAdSDK (1.0.0):
+    - AmazonPublisherServicesMoPubAdapter (= 1.3.0)
+    - AmazonPublisherServicesSDK (= 3.4.6)
+    - Google-Mobile-Ads-SDK (= 8.5.0)
+    - MoPub-FacebookAudienceNetwork-Adapters (= 6.5.0.0)
+    - mopub-ios-sdk (= 5.17.0)
+    - MoPub-Pangle-Adapters (= 3.7.0.8.0)
+    - PureLayout
+
+DEPENDENCIES:
+  - RoberAdSDK (from `../`)
+
+SPEC REPOS:
+  trunk:
+    - Ads-Global
+    - AmazonPublisherServicesMoPubAdapter
+    - AmazonPublisherServicesSDK
+    - FBAudienceNetwork
+    - FBSDKCoreKit
+    - Google-Mobile-Ads-SDK
+    - GoogleAppMeasurement
+    - GoogleUserMessagingPlatform
+    - GoogleUtilities
+    - MoPub-FacebookAudienceNetwork-Adapters
+    - mopub-ios-sdk
+    - MoPub-Pangle-Adapters
+    - nanopb
+    - PromisesObjC
+    - PureLayout
+
+EXTERNAL SOURCES:
+  RoberAdSDK:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  Ads-Global: 5b17febce6ca76ee1ffac2c3f18b9c0a0f58128b
+  AmazonPublisherServicesMoPubAdapter: b177797a2be7054cf87fed5a8a46d62923ddf914
+  AmazonPublisherServicesSDK: d302b2e4695be199fa520786f66570499cff6c94
+  FBAudienceNetwork: cfe55330dcc4e9a1df083c34a346ca7f8e32951e
+  FBSDKCoreKit: 0d1ae58388a458b8222f72025804cdc84eb5d0c3
+  Google-Mobile-Ads-SDK: 6f5c41bf73db1656e5b203ba9c31e3d0899a128d
+  GoogleAppMeasurement: 837649ad3987936c232f6717c5680216f6243d24
+  GoogleUserMessagingPlatform: ab890ce5f6620f293a21b6bdd82e416a2c73aeca
+  GoogleUtilities: 684ee790a24f73ebb2d1d966e9711c203f2a4237
+  MoPub-FacebookAudienceNetwork-Adapters: c7a4de4869afa6bc9075f03c71a8badd5577ece0
+  mopub-ios-sdk: 36d322902674b79b0560a1cb8d15af0548d364ea
+  MoPub-Pangle-Adapters: 7881af10ad7f547e7fb51f6619ecf563882bf1ee
+  nanopb: a0ba3315591a9ae0a16a309ee504766e90db0c96
+  PromisesObjC: 68159ce6952d93e17b2dfe273b8c40907db5ba58
+  PureLayout: 5fb5e5429519627d60d079ccb1eaa7265ce7cf88
+  RoberAdSDK: bb80b9086d12af5cc91e5886f00c41e3b259b492
+
+PODFILE CHECKSUM: 45f86d87d980016eadcd3bd7ba7193313768bee7
+
+COCOAPODS: 1.11.2

@@ -1,0 +1,6 @@
+framework module Pods_RoberAdSDK_Tests {
+  umbrella header "Pods-RoberAdSDK_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}
