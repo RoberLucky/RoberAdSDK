@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '9.0'
+
+target 'RoberAdSDK_Example' do
+  pod 'RoberAdSDK', :path => '../'
+
+  target 'RoberAdSDK_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
