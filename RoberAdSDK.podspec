@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'RoberAdSDK'
-  s.version          = '1.0.0'
+  s.version          = '2.0.0'
   s.summary          = 'A short description of RoberAdSDK.'
 
 # This description is used to generate tags and improve search results.
@@ -31,19 +31,41 @@ TODO: Add long description of the pod here.
   s.ios.deployment_target = '10.0'
   s.static_framework = true
 
-  s.vendored_frameworks = 'RoberAdSDK/Classes/AdSDKMavlFrameWork.framework'
-    s.resource_bundles = {
-      'RoberAdSDK' => ['RoberAdSDK/Assets/*']
-    }
+  s.vendored_frameworks = 'RoberAdSDK/Classes/OxSDKFrameWork.framework'
+    #s.resource_bundles = {
+     # 'RoberAdSDK' => ['RoberAdSDK/Assets/*']
+    #}
 
   s.frameworks = 'UIKit'
-   s.dependency 'AmazonPublisherServicesMoPubAdapter', '1.3.0'
-   s.dependency 'AmazonPublisherServicesSDK', '3.4.6'
-   s.dependency 'Google-Mobile-Ads-SDK', '8.5.0'
-   s.dependency 'mopub-ios-sdk', '5.17.0'
-   s.dependency 'PureLayout'
-   s.dependency 'MoPub-FacebookAudienceNetwork-Adapters','6.5.0.0'
-   s.dependency 'MoPub-Pangle-Adapters','3.7.0.8.0'
+ s.dependency 'PureLayout'
+ s.dependency 'Google-Mobile-Ads-SDK'
+ s.dependency 'GoogleMobileAdsMediationTestSuite'
+ s.dependency 'GoogleMobileAdsMediationFacebook'
+ s.dependency 'GoogleMobileAdsMediationMoPub'
+ s.dependency 'GoogleMobileAdsMediationAdColony'
+ s.dependency 'Ads-Global'
+ s.dependency 'Pangle-adapter-for-admob'
+ s.dependency 'GoogleMobileAdsMediationChartboost'
+ s.dependency 'GoogleMobileAdsMediationFyber'
+ s.dependency 'GoogleMobileAdsMediationInMobi'
+ s.dependency 'GoogleMobileAdsMediationIronSource'
+ s.dependency 'GoogleMobileAdsMediationUnity'
+ s.dependency 'GoogleMobileAdsMediationVungle'
+ s.dependency 'AppLovinSDK','11.1.0'
+ s.dependency 'AppLovinMediationAdColonyAdapter'
+ s.dependency 'AppLovinMediationByteDanceAdapter'
+ s.dependency 'AppLovinMediationChartboostAdapter'
+ s.dependency 'AppLovinMediationFacebookAdapter'
+ s.dependency 'AppLovinMediationFyberAdapter'
+ s.dependency 'AppLovinMediationGoogleAdapter'
+ s.dependency 'AppLovinMediationInMobiAdapter'
+ s.dependency 'AppLovinMediationIronSourceAdapter'
+ s.dependency 'AppLovinMediationSmaatoAdapter'
+ s.dependency 'AppLovinMediationUnityAdsAdapter'
+ s.dependency 'AppLovinMediationVerveAdapter'
+ s.dependency 'AppLovinMediationVungleAdapter'
+ s.dependency 'AppLovinMediationAmazonAdMarketplaceAdapter'
+ s.dependency 'AmazonPublisherServicesSDK'
   
   # s.resource_bundles = {
   #   'RoberAdSDK' => ['RoberAdSDK/Assets/*.png']
